@@ -1,0 +1,166 @@
+:root {
+  --bg-light: #f9f9fb;
+  --text-dark: #1f1f1f;
+  --accent: #19b89d;
+  --card-bg: #ffffff;
+  --soft-bg: #ededf4;
+  --border: #dcdce0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+}
+
+header {
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.inicio {
+  background-color: var(--soft-bg);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.perfil img {
+  width: 325px;
+  height: 250px;
+  border-radius: 50%;
+  border: 4px solid var(--accent);
+  margin-bottom: 1rem;
+}
+
+.perfil .texto h2 {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.perfil .texto p {
+  font-size: 1rem;
+  max-width: 600px;
+  margin-top: 0.5rem;
+}
+
+.proyectos {
+  padding: 4rem 0;
+}
+
+.proyectos h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(162, 89, 255, 0.15);
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+  color: var(--accent);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.sobre-mi {
+  background-color: var(--soft-bg);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.sobre-mi h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+
+.sobre-mi p {
+  max-width: 800px;
+  margin: auto;
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+footer {
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #777;
+}
